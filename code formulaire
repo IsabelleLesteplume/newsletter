@@ -15,19 +15,24 @@
 
     <!-- Script JavaScript pour effectuer la redirection -->
     <script type="text/javascript">
-        // Redirection vers l'URL de la page cible après un court délai
-        setTimeout(function() {
-            window.location.href = 'https://suvqs.mjt.lu/wgt/suvqs/x50t/form?c=fe1ed571';
-        }, 1000); // Délai en millisecondes (1 seconde dans cet exemple)
+        // Fonction pour rediriger vers la même URL après le chargement complet de la page
+        function redirectToSameURL() {
+            window.location.replace(window.location.href);
+        }
+
+        // Détecter quand la page est complètement chargée
+        window.addEventListener('load', function() {
+            // Afficher le corps de la page
+            document.body.style.display = 'block';
+            // Rediriger vers la même URL après un court délai (optionnel)
+            setTimeout(redirectToSameURL, 1000); // Délai en millisecondes (1 seconde dans cet exemple)
+        });
     </script>
 
-    <!-- Afficher le contenu du corps après la redirection -->
-    <script>
-        // Attend que la fenêtre entière soit chargée
-        window.onload = function() {
-            document.body.style.display = 'block';
-        };
-    </script>
+    <!-- Contenu visible uniquement après la redirection -->
+    <div>
+        <p>Contenu de la page...</p>
+    </div>
 
 </body>
 </html>
