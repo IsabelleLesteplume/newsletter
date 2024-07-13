@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirection vers la Page Cible</title>
     <style>
-        /* Masquer le corps de la page initialement */
+        /* Masquer le contenu de la page initialement */
         body {
             display: none;
         }
@@ -15,9 +15,9 @@
 
     <!-- Script JavaScript pour effectuer la redirection -->
     <script type="text/javascript">
-        // Redirection vers l'URL de la page cible après un court délai
+        // Redirection vers la même URL après un court délai
         setTimeout(function() {
-            window.location.href = 'https://suvqs.mjt.lu/wgt/suvqs/x50t/form?c=fe1ed571';
+            window.location.href = window.location.href;
         }, 1000); // Délai en millisecondes (1 seconde dans cet exemple)
     </script>
 
