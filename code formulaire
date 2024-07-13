@@ -34,4 +34,38 @@
     </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simuler un Clic sur le Bouton</title>
+</head>
+<body>
+    <iframe id="formIframe" data-w-type="embedded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://isabellelesteplume.github.io/newsletter/" width="100%" style="height: 600px;"></iframe>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var iframe = document.getElementById('formIframe');
+
+            iframe.onload = function() {
+                var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+                var button = iframeDocument.querySelector('.pas-button'); // Sélecteur pour le bouton à l'intérieur de l'iframe
+
+                if (button) {
+                    // Vérification supplémentaire pour s'assurer que le bouton est visible
+                    var buttonRect = button.getBoundingClientRect();
+                    if (buttonRect.width > 0 && buttonRect.height > 0) {
+                        button.click(); // Simuler un clic sur le bouton
+                    } else {
+                        console.warn('Le bouton est caché ou invisible.');
+                    }
+                } else {
+                    console.warn('Aucun bouton trouvé avec le sélecteur spécifié.');
+                }
+            };
+        };
+    </script>
+</body>
+</html>
 
