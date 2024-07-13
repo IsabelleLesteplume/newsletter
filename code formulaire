@@ -25,7 +25,7 @@
             var iframe = document.getElementById('formIframe');
             iframe.onload = function() {
                 var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-                var button = iframeDocument.querySelector("pas-button"); // Sélecteur pour le bouton à l'intérieur de l'iframe
+                var button = iframeDocument.querySelector('class=pas-button'); // Sélecteur pour le bouton à l'intérieur de l'iframe
 
                 if (button) {
                     button.click(); // Simuler un clic sur le bouton
