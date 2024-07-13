@@ -13,20 +13,22 @@
 </head>
 <body>
 
-    <!-- Script JavaScript pour effectuer la redirection -->
-    <script type="text/javascript">
-        // Redirection vers la même URL après un court délai
-        setTimeout(function() {
-            window.location.href = window.location.href;
-        }, 1000); // Délai en millisecondes (1 seconde dans cet exemple)
-    </script>
+    <!-- Afficher un message de redirection -->
+    <p>Redirection en cours...</p>
 
-    <!-- Afficher le contenu du corps après la redirection -->
-    <script>
+    <script type="text/javascript">
         // Attend que la fenêtre entière soit chargée
         window.onload = function() {
-            document.body.style.display = 'block';
+            // Redirige vers l'URL de la page cible (la même URL)
+            window.location.href = window.location.href;
         };
+    </script>
+
+    <!-- Afficher le contenu après un court délai (optionnel) -->
+    <script>
+        setTimeout(function() {
+            document.body.style.display = 'block';
+        }, 1000); // Délai en millisecondes (1 seconde dans cet exemple)
     </script>
 
 </body>
