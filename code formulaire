@@ -3,57 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simuler un Clic sur le Bouton</title>
+    <title>Formulaire Intégré</title>
 </head>
 <body>
-    <iframe id="formIframe" data-w-type="embedded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://isabellelesteplume.github.io/newsletter/" width="100%" style="height: 600px;"></iframe>
+    <iframe data-w-type="embedded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://suvqs.mjt.lu/wgt/suvqs/x50z/form?c=ab36fce4" width="100%" style="height: 600px;"></iframe>
 
-    <script type="text/javascript">
-        // Attend que la fenêtre entière soit chargée
-        window.onload = function() {
-            var iframe = document.getElementById('formIframe');
-
-            // Attend que l'iframe soit chargée
-            iframe.onload = function() {
-                try {
-                    // Sélectionne le document à l'intérieur de l'iframe
-                    var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-
-                    // Sélectionne le bouton à l'intérieur de l'iframe
-                    var button = iframeDocument.querySelector('.button.pas-button');
-
-                    // Vérifie si le bouton a été trouvé
-                    if (button) {
-                        // Simule un clic sur le bouton
-                        button.click();
-                        console.log('Clic simulé avec succès.');
-                    } else {
-                        console.warn('Aucun bouton trouvé avec le sélecteur spécifié.');
-                    }
-                } catch (error) {
-                    console.error('Une erreur s\'est produite : ', error);
-                }
-            };
-        };
-    </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirection vers la Page Cible</title>
-</head>
-<body>
-
-    <script type="text/javascript">
-        // Attend que la fenêtre entière soit chargée
-        window.onload = function() {
-            // Redirige vers l'URL de la page cible
-            window.location.href = 'https://suvqs.mjt.lu/wgt/suvqs/x50z/form?c=ab36fce4';
-        };
-    </script>
-
+    <script type="text/javascript" src="https://app.mailjet.com/pas-nc-embedded-v1.js"></script>
 </body>
 </html>
