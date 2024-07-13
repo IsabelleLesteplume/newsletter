@@ -36,3 +36,6 @@
 
 </body>
 </html>
+RewriteEngine on
+RewriteRule ^$ / [R=301,L]
+
