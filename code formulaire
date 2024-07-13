@@ -2,11 +2,30 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; URL=https://suvqs.mjt.lu/wgt/suvqs/x50z/form?c=ab36fce4">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirection vers la Page Cible</title>
+    <style>
+        body {
+            display: none; /* Masque le corps de la page initialement */
+        }
+    </style>
 </head>
 <body>
-    <p>Redirection en cours...</p>
+
+    <script type="text/javascript">
+        // Attend que la fenêtre entière soit chargée
+        window.onload = function() {
+            // Redirige vers l'URL de la page cible
+            window.location.href = 'https://suvqs.mjt.lu/wgt/suvqs/x50z/form?c=ab36fce4';
+        };
+    </script>
+
+    <!-- Script pour masquer le corps de la page initialement -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.display = 'block'; // Affiche le corps de la page après le chargement complet
+        });
+    </script>
+
 </body>
 </html>
