@@ -20,7 +20,7 @@
                     var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
 
                     // Sélectionne le bouton à l'intérieur de l'iframe
-                    var button = iframeDocument.querySelector('.pas-button');
+                    var button = iframeDocument.querySelector('.button.pas-button');
 
                     // Vérifie si le bouton a été trouvé
                     if (button) {
