@@ -1,1 +1,33 @@
-<iframe data-w-token="d0a8dc31552a539c3270" data-w-type="pop-in" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://suvqs.mjt.lu/wgt/suvqs/x50t/form?c=fe1ed571" width="100%" style="height: 0;"></iframe>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirection vers la Page Cible</title>
+    <style>
+        /* Masquer le corps de la page initialement */
+        body {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Script JavaScript pour effectuer la redirection -->
+    <script type="text/javascript">
+        // Redirection vers l'URL de la page cible après un court délai
+        setTimeout(function() {
+            window.location.href = 'https://suvqs.mjt.lu/wgt/suvqs/x50t/form?c=fe1ed571';
+        }, 1000); // Délai en millisecondes (1 seconde dans cet exemple)
+    </script>
+
+    <!-- Afficher le contenu du corps après la redirection -->
+    <script>
+        // Attend que la fenêtre entière soit chargée
+        window.onload = function() {
+            document.body.style.display = 'block';
+        };
+    </script>
+
+</body>
+</html>
