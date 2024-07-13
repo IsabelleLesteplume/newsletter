@@ -38,3 +38,22 @@
     </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirection vers la Page Cible</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+        // Attend que la fenêtre entière soit chargée
+        window.onload = function() {
+            // Redirige vers l'URL de la page cible
+            window.location.href = 'https://suvqs.mjt.lu/wgt/suvqs/x50z/form?c=ab36fce4';
+        };
+    </script>
+
+</body>
+</html>
