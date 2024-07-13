@@ -2,25 +2,34 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; URL=https://isabellelesteplume.github.io/newsletter/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirection vers la Page Cible</title>
     <style>
-        /* Masquer le contenu de la page initialement */
+        /* Masquer le corps de la page initialement */
         body {
             display: none;
         }
     </style>
 </head>
 <body>
+
     <!-- Afficher un message de redirection -->
     <p>Redirection en cours...</p>
-    
-    <!-- Script pour afficher le contenu après un court délai -->
-    <script>
+
+    <script type="text/javascript">
+        // JavaScript pour simuler la redirection après un court délai
         setTimeout(function() {
-            document.body.style.display = 'block';
+            window.location.href = window.location.href;
         }, 1000); // Délai en millisecondes (1 seconde dans cet exemple)
     </script>
+
+    <!-- Afficher le contenu du corps après la redirection -->
+    <script>
+        // Attend que la fenêtre entière soit chargée
+        window.onload = function() {
+            document.body.style.display = 'block';
+        };
+    </script>
+
 </body>
 </html>
